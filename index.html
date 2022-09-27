@@ -1,0 +1,305 @@
+<!DOCTYPE HTML>
+<html style="background-color: #e1e1e1;">
+	<head>
+		<title>TurtleTutoring
+		</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="styles.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Lato:wght@300&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body id="home">
+		<div class="sticky">
+			<div class="navbar">
+				<a href="#home" class="navbuttons">Home</a>
+				<div class="dividerw"></div>
+				<div class="dropdown">
+					<a class="subjectbutton dropbutton">Subjects</a>
+					<div class="subjects">
+						<a href="#subjects" onclick="mathInfo();">Math</a>
+						<a href="#subjects" onclick="englishInfo();">English</a>
+						<a href="#subjects" onclick="scienceInfo();">Science</a>
+						<a href="#subjects" onclick="historyInfo();">History</a>
+						<a href="#subjects" onclick="computerScienceInfo();">Computer Science</a>
+						<a href="#subjects" onclick="worldLanguageInfo();">World Language</a>
+					</div>
+				</div>
+				<span style="margin-left: -15px;" class="material-symbols-rounded">expand_more</span>
+				<div class="dividerw"></div>
+				<a class="navbuttons">Our Team</a>
+				<div class="dividerw"></div>
+				<a href="mailto:turtletutoringnj@gmail.com" class="navbuttons">Contact Us</a>
+				<div class="dividerw"></div>
+				<a class="navbuttons">Donate</a>
+				<div class="dividerw"></div>
+				<div class="dividerw"></div>
+			</div>
+		</div>
+		<!-- Header -->
+			<section id="welcome">
+				<div class="welcomearea">
+                    <img class="logo" src="images/LogoWhite.png">
+					<h1>Welcome to <strong>TurtleTutoring</strong></h1>
+					<hr style="border-bottom: solid 1px #e1e1e1;">
+					<p>A place to learn at your own pace</p>
+				</div>
+			</section>
+
+		<!-- One -->
+			<section>
+				<div class="container">
+						<div class="half">
+							<h2>Our Purpose</h2>
+							<hr>
+							<p>Turtle Tutoring is a <u>non-profit organization</u> that provides <u>free tutoring</u> to allow everyone to have the resources that they need to succeed. Our panel of tutors specialize in tutoring <u>middle school to high school subjects</u> ranging from honors and AP level classes in the fields of <u>Mathematics, English, Science, History, and World Languages</u>. Take the initiative to join TurtleTutoring to bridge the gap or accelerate your educational journey! </p>
+						</div>
+						<div class="half">
+							<img src="images/teaching.png" style="width:100%"/>
+						</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="container">
+						<div class="half">
+							<iframe src="https://discord.com/widget?id=997608874729275493&theme=dark" width="80%" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+						</div>
+
+						<div class="half">
+							<h2>Join Our Discord</h2>
+							<hr>
+							<p>The TurtleTutoring discord is a great place to receive updates and new information on classes and scheduling! </p>
+							<div style="display: flex; justify-content: center;">
+								<a href="https://discord.gg/sfEQkrQj" class="button">JOIN</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="subjects" style="width: 100%;">
+				<div style="flex-flow: column;" class="container">
+					<div style="text-align: center;">
+						<h2>What We Teach</h2>
+						<hr>
+						<p>Click on a subject to sign up</p>
+					</div>
+					<div style="display: flex; justify-content: center;">
+						<div class="subjectbuttongrid">
+							<a href="#mathinfo" id="math" class="button" onclick="mathInfo();">Math</a>
+							<!-- <div class="dividerw"></div> -->
+							<a href="#englishinfo" id="english" class="button" onclick="englishInfo();">English</a>
+							<!-- <div class="dividerw"></div> -->
+							<a href="#scienceinfo" id="science" class="button" onclick="scienceInfo();">Science</a>
+							<!-- <div class="dividerw"></div> -->
+							<a href="#historyinfo" id="history" class="button" onclick="historyInfo();">History</a>
+							<!-- <div class="dividerw"></div> -->
+							<a href="#computerscienceinfo" id="computerscience" class="button" onclick="computerScienceInfo();">Computer Science</a>
+							<!-- <div class="dividerw"></div> -->
+							<a href="#worldlanguageinfo" id="worldlanguage" class="button" onclick="worldLanguageInfo();">World Language</a>
+						</div>
+					</div>
+
+					<div class="dividerh"></div>
+					<div class="dividerh"></div>
+					<div class="dividerh"></div>
+					<div class="dividerh"></div>
+					<div class="dividerh"></div>
+					<div class="dividerh"></div>
+					<div class="dividerh"></div>
+					<div class="dividerh"></div>
+
+					<div style="display: flex; justify-content: center;">
+						<div class="info" id="mathinfo">
+							<p>Math</p>
+							<hr>
+							<!-- <p>Geometry</p>
+							<p>Pre Algebra</P>
+							<p>Algebra I</P>
+							<p>Algebra II</P>
+							<p>Pre Calculus</P>
+							<p>Calculus (Coming Soon)</P> -->
+
+							<iframe class="fadeform" src="https://docs.google.com/forms/d/e/1FAIpQLSeXXIcB4WsFgzkOqnCU75c9ksDeuuHCerYuOd19UuYwQxduLQ/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+							<hr>
+
+							<div style="display: flex; flex-flow: row; justify-content: center; vertical-align: baseline;">
+								<a href="https://forms.gle/7U28sdVmaTjnxypk8" class="button" style="height: 32.5px;">Open in Google Forms</a>
+								<div class="dividerw"></div>
+								<a href="#subjects" style="background-color: rgba(255, 0, 0, 0.248); height: 32.5px;" class="button" onclick="resetInfo();">Close</a>
+							</div>
+							<div class="dividerh"></div>
+							<div class="dividerh"></div>
+						</div>
+
+						<div class="info" id="englishinfo">
+							<p>English</p>
+							<hr>
+							<!-- <p>Grammar (Coming Soon)</p> -->
+
+							<iframe class="fadeform" src="https://docs.google.com/forms/d/e/1FAIpQLSdRx66s2rURahj3OSP4GsZmWImiX8p381Ge9DoPC9yEzUWicA/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+							<hr>
+							<div style="display: flex; flex-flow: row; justify-content: center; vertical-align: baseline;">
+								<a href="https://forms.gle/MkeEXXcvKnHD4HKJ9" class="button" style="height: 32.5px;">Open in Google Forms</a>
+								<div class="dividerw"></div>
+								<a href="#subjects" style="background-color: rgba(255, 0, 0, 0.248); height: 32.5px;" class="button" onclick="resetInfo();">Close</a>
+							</div>
+							<div class="dividerh"></div>
+							<div class="dividerh"></div>
+						</div>
+
+						<div class="info" id="scienceinfo">
+							<p>Science</p>
+							<hr>
+							<!-- <p>Physics</p>
+							<p>Chemistry</p>
+							<p>Biology (Coming Soon)</p> -->
+
+							<iframe class="fadeform" src="https://docs.google.com/forms/d/e/1FAIpQLSeDzC8bdL4K-i9WuFrCYalFtm7w-DvrKY5q0AAG96cQga6w6A/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+							<hr>
+							<div style="display: flex; flex-flow: row; justify-content: center; vertical-align: baseline;">
+								<a href="https://forms.gle/jdu9GXWUvq3DXhY86" class="button" style="height: 32.5px;">Open in Google Forms</a>
+								<div class="dividerw"></div>
+								<a href="#subjects" style="background-color: rgba(255, 0, 0, 0.248); height: 32.5px;" class="button" onclick="resetInfo();">Close</a>
+							</div>
+							<div class="dividerh"></div>
+							<div class="dividerh"></div>
+						</div>
+
+						<div class="info" id="historyinfo">
+							<p>History</p>
+							<hr>
+							<!-- <p>U.S. History (Coming Soon)</p>
+							<p>World History</p>
+							<p>Geography (Coming Soon)<p> -->
+
+							<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScFtBIfwPzh7BmM-38gENZR44iSaeox_yysOLwDttRkKPLIMQ/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+							<hr>
+							<div style="display: flex; flex-flow: row; justify-content: center; vertical-align: baseline;">
+								<a href="https://forms.gle/e5WbKWh6g4egA3vG9" class="button" style="height: 32.5px;">Open in Google Forms</a>
+								<div class="dividerw"></div>
+								<a href="#subjects" style="background-color: rgba(255, 0, 0, 0.248); height: 32.5px;" class="button" onclick="resetInfo();">Close</a>
+							</div>
+							<div class="dividerh"></div>
+							<div class="dividerh"></div>
+						</div>
+
+						<div class="info" id="computerscienceinfo">
+							<p>Computer Science</p>
+							<hr>
+							<!-- <p>Python</p>
+							<p>Java</p>
+							<p>HTML/CSS/JS (Coming Soon)</p>
+							<p>Unity Game Developement (Coming Soon)</p> -->
+
+							<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdP3eiq1pa2mZ51nNEi3M7YdoFr4FmeanaHolk3nX5ngweAWw/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+							<hr>
+							<div style="display: flex; flex-flow: row; justify-content: center; vertical-align: baseline;">
+								<a href="https://forms.gle/ngYEATPZVgrw9itD6" class="button" style="height: 32.5px;">Open in Google Forms</a>
+								<div class="dividerw"></div>
+								<a href="#subjects" style="background-color: rgba(255, 0, 0, 0.248); height: 32.5px;" class="button" onclick="resetInfo();">Close</a>
+							</div>
+							<div class="dividerh"></div>
+							<div class="dividerh"></div>
+						</div>
+
+						<div class="info" id="worldlanguageinfo">
+							<p>World Language</p>
+							<hr>
+							<!-- <p>Spanish</p>
+							<p>French (Coming Soon)</p>
+							<p>Chinese</p>
+							<p>Tamil (Coming Soon)</p> -->
+
+							<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfkUTHXV1tXUKCSMFRuay0Xl6KZCjrqo7P2Uk_xXtNugQW-XA/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+							<hr>
+							<div style="display: flex; flex-flow: row; justify-content: center; vertical-align: baseline;">
+								<a href="https://forms.gle/vEbMmNY1q1U9LSXc7" class="button" style="height: 32.5px;">Open in Google Forms</a>
+								<div class="dividerw"></div>
+								<a href="#subjects" style="background-color: rgba(255, 0, 0, 0.248); height: 32.5px;" class="button" onclick="resetInfo();">Close</a>
+							</div>
+							<div class="dividerh"></div>
+							<div class="dividerh"></div>
+						</div>
+					</div>
+					<div class="dividerh"></div>
+					<div class="dividerh"></div>
+					<hr>
+				</div>
+			</section>
+
+		<!-- Three -->
+			<!-- <section>
+				<div style="flex-flow: column;" class="container">
+					<h2 style="text-align: center;">Popular Courses</h2>
+					<hr>
+					<p style="text-align: center;">Sign up for some of our most popular courses</p>
+					<div style="display: flex; flex-flow: row">
+						<div class="third">
+							<div style="display: flex; justify-content: center; flex-flow: column; text-align: center;">
+								<img src="images/pic02.jpg" alt="" />
+								<h3>Intro To Python</h3>
+								<p>An involved course that goes through all the basics of Python and sets you up for more advanced projects.</p>
+								<a class="button">Sign Up</a>
+							</div>
+						</div>
+
+						<div class="dividerw"></div>
+
+						<div class="third">
+							<div style="display: flex; justify-content: center; flex-flow: column; text-align: center;">
+								<img src="images/pic02.jpg" alt="" />
+								<h3>US History</h3>
+								<p>An in depth look at US History and its impact on the world.</p>
+								<a class="button">Sign Up</a>
+							</div>
+						</div>
+
+						<div class="dividerw"></div>
+
+						<div class="third">
+							<div style="display: flex; justify-content: center; flex-flow: column; text-align: center;">
+								<img src="images/pic02.jpg" alt="" />
+								<h3>Algebra II</h3>
+								<p>A paced course going through everything in Algebra II that will leave you with plenty of knowledge on the topic.</p>
+								<a class="button">Sign Up</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section> -->
+
+		<!-- Four -->
+			<section class="gradient">
+				<div style="display: flex; flex-flow: column; color: #e1e1e1; text-align: center;" class="container">
+					<h2>Want to Become a Tutor</h2>
+					<hr style="border-bottom: solid 1px #e1e1e1;">
+					<p>Sign up through the google form and become a tutor</p>
+					<a href="https://forms.gle/GUT2qGjydyj3d7Sf7" class="gradientbutton">Sign Up</a>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<section style="padding: 50px; background-color: #3287c4;">
+				<div style="display: flex; justify-content: end;">
+					<a href="https://www.instagram.com/turtletutoringnj" class="plainbutton"><img style="width: 50px; height: 50px;" src="images/InstagramLogo.png"></a>
+					<div class="dividerw"></div>
+					<a href="https://twitter.com/turtletutnj" class="plainbutton"><img style="width: 50px; height: 50px;" src="images/TwitterLogo.png"></a>
+					<div class="dividerw"></div>
+					<a href="https://www.linkedin.com/company/turtletutoring" class="plainbutton"><img style="width: 50px; height: 50px;" src="images/LinkedInLogo.png"></a>
+					<div class="dividerw"></div>
+					<a onclick="facebook();" class="plainbutton"><img style="width: 50px; height: 50px;" src="images/FacebookLogo.png"></a>
+				</div>
+			</section>
+
+	</body>
+</html>
+
+<script src="script.js"></script>

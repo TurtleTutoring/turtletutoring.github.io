@@ -1,0 +1,359 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #e1e1e1;
+    font-family: Lato;
+    margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    background-color: #3287c4;
+    color: #e1e1e1;
+}
+
+.navbuttons {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+    cursor: pointer;
+    color: #e1e1e1;
+}
+
+.subjectbutton {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.navbuttons::after { 
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 2px;
+    width: 0;
+    background: #e1e1e1;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.navbuttons:hover::after { 
+    width: 100%; 
+    left: 0;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+  
+.dropdown .dropbutton {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: #e1e1e1;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.subjects {
+    display: none;
+    position: absolute;
+    background-color: #3287c4;
+    min-width: 160px;
+    border: 1px solid #e1e1e1;
+    z-index: 1;
+}
+
+.subjects a {
+    background-color: #3287c4;
+    float: none;
+    color: #e1e1e1;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: 0.5s;
+    animation: subjectFadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transition: 0.5s;
+}
+
+.subjects a:hover {
+    filter: brightness(0.75);
+    transition: 0.5s;
+}
+
+.dropdown:hover .subjects {
+    display: block;
+    animation: dropdownAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes subjectFadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+     }
+}
+
+@keyframes dropdownAnimation {
+    0% {
+        height: 0px;
+    }
+    100% {
+        height: 275px;
+     }
+}
+
+/* @keyframes subjectFadeInAnimation {
+    0% {
+        transform: scale(1, 0);
+    }
+
+    50% {
+        transform: scale(1, 0);
+    }
+
+    100% {
+        transform: scale(1, 1);
+     }
+} */
+
+hr {
+    border: 0;
+    border-bottom: solid 1px rgba(144, 144, 144, 0.5);
+    margin: 2em 0;
+}
+
+.logo {
+    height: 250px;
+    width: 250px;
+}
+
+#welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(45deg, #4bcc67, #2cc1d1);
+    color: #e1e1e1;
+    text-align: center;
+    height: 750px;
+    font-size: x-large;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    line-height: 2;
+    padding: 100px;
+    color: #666666;
+    font-size: larger;
+}
+
+.half {
+    width: 50%;
+}
+
+.third {
+    width: 33%;
+}
+
+.dividerw {
+    width: 10px;
+}
+
+.dividerh {
+    height: 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    background-color: #e1e1e1;
+    padding: 15px 50px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #666666;
+    font-family: Lato;
+    font-size: large;
+    transition: 0.5s;
+    color: #666666;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button:hover {
+    transition: 0.5s;
+    filter: brightness(0.95);
+}
+
+.gradientbutton {
+    background-color: #e1e1e100;
+    padding: 15px 50px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #e1e1e1;
+    font-family: Lato;
+    font-size: large;
+    transition: 0.5s;
+    color: #e1e1e1;
+    cursor: pointer;
+    text-decoration: none
+}
+
+.gradientbutton:hover {
+    transition: 0.5s;
+    filter: brightness(0.95);
+    background-color: #e1e1e130;
+}
+
+.plainbutton {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+    text-decoration: none
+}
+
+.plainbutton:hover {
+    transition: 0.5s;
+    filter: brightness(0.75);
+}
+
+.gradient {
+    background-image: linear-gradient(45deg, #4bcc67, #2cc1d1);
+}
+
+.subjectinfo {
+    display: none;
+    position: absolute;
+    top: 100px;
+    height: 250px;
+    background-color: transparent;
+    border: 1px solid #1e1e1e;
+    z-index: 1;
+}
+
+@keyframes subjectInfoAnimation {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.info {
+    display: none;
+    padding: 10px;
+    margin-top: 50px;
+    width: 0%;
+    background-color: transparent;
+    border: 1px solid #666666;
+    border-radius: 5px;
+    animation: subjectInfoAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.info p {
+    animation: infoFadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.info a {
+    animation: infoFadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.fadeform {
+    animation: formFadeInAnimation ease 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes infoFadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes formFadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.subjectbuttongrid {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 5%;
+}
